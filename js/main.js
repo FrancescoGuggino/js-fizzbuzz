@@ -17,31 +17,51 @@ Applica uno stile differente a seconda del valore dell'indice per i multipli di 
 //genra numeri 1 a 100
 
 for (let i=1; i <= 100 ; i++) {
-    document.getElementById('squaresContainer').innerHTML += `
-        <div class="square">
-            <p class="text-center text-white fs-3 fw-3 vertical-align-square">${i}</p>
-        </div>
-    `;
+    
 
     // se multiplo di 3 allora fizzbuzz
     if (i % 3 == 0 && i % 5 == 0) {
 
     //sfondo rosso fizzbuzz
     document.getElementById('squaresContainer').innerHTML += `
-    <div class="squarered">
-        <p class="text-center text-white fs-3 fw-3 vertical-align-square bg-color-red">${i}</p>
+    <div class="square">
+        <p class="text-center text-white fs-3 fw-3 vertical-align-square bg-color-red">${"fizzbuzz"}</p>
     </div>
 `;
 
         console.log("fizzbuzz");
+
     // se multiplo di 5 allora buzz
     } else if (i % 5 == 0) {
+
+        //sfondo giallo buzz
+    document.getElementById('squaresContainer').innerHTML += `
+    <div class="square">
+        <p class="text-center text-white fs-3 fw-3 vertical-align-square bg-color-yellow">${"buzz"}</p>
+    </div>
+`;
+
         console.log("buzz");
+
     // se multiplo di 3 e 5 allora fizz
     } else if (i % 3 == 0) {
+
+        //sfondo giallo buzz
+    document.getElementById('squaresContainer').innerHTML += `
+    <div class="square">
+        <p class="text-center text-white fs-3 fw-3 vertical-align-square bg-color-green">${"fizz"}</p>
+    </div>
+`;
+
         console.log("fizz");
+
     // altrimenti numeri
     } else {
+        document.getElementById('squaresContainer').innerHTML += `
+    <div class="square">
+        <p class="text-center text-white fs-3 fw-3 vertical-align-square bg-color-blue">${i}</p>
+    </div>
+`;
         console.log(i);
     }
 }

@@ -22,3 +22,15 @@
 .bg-color-red {
     background-color: rgb(228, 70, 65);
 }
+
+.bg-color-yellow {
+    background-color: rgb(231, 231, 108);
+}
+
+.bg-color-green {
+    background-color: rgb(194, 247, 114);
+}
+
+.bg-color-blue {
+    background-color: dodgerblue;
+}
