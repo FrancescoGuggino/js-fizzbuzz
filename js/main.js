@@ -18,15 +18,15 @@ Applica uno stile differente a seconda del valore dell'indice per i multipli di 
 
 for (let i=1; i <= 100 ; i++) {
 
-    // se multiplo di 3 allora fizz
-    if (i % 3 == 0) {
-        console.log (fizz) ;
+    // se multiplo di 3 allora fizzbuzz
+    if (i % 3 == 0 && i % 5 == 0) {
+        console.log("fizzbuzz");
     // se multiplo di 5 allora buzz
     } else if (i % 5 == 0) {
-        console.log(buzz);
-    // se multiplo di 3 e 5 allora fizzbuzx
-    } else if (i % 3 == 0 && i % 5 == 0) {
-        console.log(fizzbuzz);
+        console.log("buzz");
+    // se multiplo di 3 e 5 allora fizz
+    } else if (i % 3 == 0) {
+        console.log("fizz");
     // altrimenti numeri
     } else {
         console.log(i);
