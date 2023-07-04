@@ -25,6 +25,14 @@ for (let i=1; i <= 100 ; i++) {
 
     // se multiplo di 3 allora fizzbuzz
     if (i % 3 == 0 && i % 5 == 0) {
+
+    //sfondo rosso fizzbuzz
+    document.getElementById('squaresContainer').innerHTML += `
+    <div class="squarered">
+        <p class="text-center text-white fs-3 fw-3 vertical-align-square bg-color-red">${i}</p>
+    </div>
+`;
+
         console.log("fizzbuzz");
     // se multiplo di 5 allora buzz
     } else if (i % 5 == 0) {

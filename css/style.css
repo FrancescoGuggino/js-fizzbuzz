@@ -18,3 +18,7 @@
     line-height: 100px;
     vertical-align: middle;
 }
+
+.bg-color-red {
+    background-color: rgb(228, 70, 65);
+}
