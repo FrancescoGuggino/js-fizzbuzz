@@ -17,6 +17,11 @@ Applica uno stile differente a seconda del valore dell'indice per i multipli di 
 //genra numeri 1 a 100
 
 for (let i=1; i <= 100 ; i++) {
+    document.getElementById('squaresContainer').innerHTML += `
+        <div class="square">
+            <p class="text-center text-white fs-3 fw-3 vertical-align-square">${i}</p>
+        </div>
+    `;
 
     // se multiplo di 3 allora fizzbuzz
     if (i % 3 == 0 && i % 5 == 0) {
