@@ -14,6 +14,23 @@ BONUS 2
 Applica uno stile differente a seconda del valore dell'indice per i multipli di 3, per i multipli di 5 e per i valori che sono sia multipli di 3 che di 5.
 */
 
+//genra numeri 1 a 100
+
 for (let i=1; i <= 100 ; i++) {
-    console.log(i);
+
+    // se multiplo di 3 allora fizz
+    if (i % 3 == 0) {
+        console.log (fizz) ;
+    // se multiplo di 5 allora buzz
+    } else if (i % 5 == 0) {
+        console.log(buzz);
+    // se multiplo di 3 e 5 allora fizzbuzx
+    } else if (i % 3 == 0 && i % 5 == 0) {
+        console.log(fizzbuzz);
+    // altrimenti numeri
+    } else {
+        console.log(i);
+    }
 }
+
+
